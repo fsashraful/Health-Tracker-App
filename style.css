@@ -1,52 +1,236 @@
+body,h1,h2,h3,h4,h6,h5,span,p{
+    font-family: 'Work Sans', sans-serif;
+}
+
 .my-bg{
-    background: #f9f9ff;
+    background: #f7f9ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+.navbar-brand span img{
+    width: 50px;
+}
+
+.navbar-brand{
+    font-size: 30px !important;
+    font-weight: 500;
+}
+
+.my-menu{
+	margin-left: 130px;
+}
+
+.my-menu .nav-item .nav-link {
+	padding: 0px 10px;
+	color: black;
+}
+
+.buy-now {
+	margin-right: 20px;
+	padding: 5px 20px;
+    border: 2px solid blue;
+    font-weight: bold;
+}
+
+/* ========= Banner Section start ========  */
+.banner{
+    padding: 200px 0;
+    background: url(https://mobirise.com/extensions/appamp/assets/images/mbr-10.jpg) no-repeat center center;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.502);
+    z-index: -1;
+}
+
+
+.banner-content h4 {
+	font-weight: 300;
+    padding-bottom: 10px;
+}
+.banner-content h2 {
+	font-size: 3rem;
+}
+
+.form div .form-control {
+	padding: 15px 20px;
+	box-shadow: 1px 1px 15px #6278df;
+}
+
+.form div button {
+	padding: 14px 69px;
+	background: green;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+    border: none;
+}
+/* ========= Banner Section End ========  */
+
+/* ==== About Section Start ====  */
+.about-text {
+	margin-top: 120px;
+}
+/* ==== About Section End ====  */
+
+/* ==== Service Section Start ====  */
+.service-text h2 {
+	font-size: 45px;
+	font-weight: 500;
+}
+.service-text p{
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+.service-item {
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    position: relative;
+}
+
+
+.left-img{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-text {
+	width: 60%;
+	padding: 10px;
+}
+
+.left-img img {
+	height: 100%;
+	width: auto !important;
+	max-width: inherit;
+	position: relative;
+	left: -85px;
+}
+
+.left-img3{
+    left: 0px !important;
+}
+
+
+/* ==== Service Section End ====  */
+
+/* ==== Apps Section start ==== */
+
+.apps-info a{
+   position: relative;
+   display: inline-block;
+}
+
+.apps-info a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(21, 0, 255, 0.409);
+    transition: .5s;
+    visibility: hidden;
+    opacity: 0;
+   
+}
+
+.apps-info a:hover:after{
+    visibility: visible;
+    opacity: 1;
+}
+/* ==== Apps Section End ==== */
+
+/* ==== Buy plan start ==== */
+.plan-text h1{
+    font-size: 60px;
+}
+.plan-text p{
+    font-size: 24px;
+}
+
+.plan{
+    background: white;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.my-icon li span {
+	color: #6278df;
+	display: inline-block;
+	width: 30px;
+	font-size: 25px;
+}
+
+.my-icon li {
+	font-size: 19px;
+	line-height: 50px;
+}
+
+.get-button button {
+	border: none;
+	padding: 15px 40px;
+	box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+	font-size: 18px;
+	font-weight: bold;
+	color: #6278df;
+}
+
+.get-button button:hover{
+    background: black !important;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.plan:hover button{
+    background: #6278df;
+    color: white;
     
 }
 
-.me-bio-text {
-	margin-top: 160px;
+/* ==== Buy plan End ==== */
+
+/* ====  Feedback Area start ==== */
+.feedback-content h4 {
+	font-weight: 300;
 }
 
-.defult-button{
-    background: #8490ff;
-    font-weight: 500;
-    border: none;
+.feedback-content h2 {
+	font-size: 45px;
+	padding-top: 20px;
+}
+.feedback-content span {
+	font-size: 80px;
+	display: inline-block;
+	opacity: .2;
+	height: 30px;
+	margin: -26px 30px;
 }
 
-.number-counter{
-    background: #8490ff;
-    color: white;
-}
-.number-counter {
-    font-weight: 600;
-
+.user-bio-img {
+	margin-left: 110px;
 }
 
-.number-counter p{
-    font-weight: 500;
-}
+/* ====  Feedback Area End ==== */
 
-.service-plan{
-    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
-    border-radius: 10px;
-    background: white;
-}
-
-.service-plan h1{
-    background: #f9f9ff;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border-radius: 50%;
-    line-height: 100px;
-}
-
-.service-plan button{
-    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
-}
-
-/* ==== Admin panel Area Start ====  */
-
+/* ==== History Area Start ====  */
 .card,.card-footer,.card-header{
     border: none;
     background: none;
@@ -59,15 +243,17 @@
 }
 
 .card-header img {
-	width: 110px;
-	margin: -99px 0px -36px -120px;
+	width: 129px;
+	margin: -115px 0px -25px -10px;
 }
 
-
+.card-footer{
+    padding: 20px;
+}
 .card-footer button{
     box-shadow: 2.5px 4.33px 20px 0 rgba(41, 68, 189, 0.468);
     border: none;
-
+    margin-left: 20px;
 }
 
 .card-footer button:hover{
@@ -79,30 +265,26 @@
 .top-card {
 	padding: 100px 0 0 0;
 }
-/* ==== Admin Panlen End ====  */
+/* ==== History Area End ====  */
 
 /* ====== Contact Area start ====  */
 .form-div{
     box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
     padding: 50px;
     border-radius: 10px;
-    background: white;
 }
 .form-control {
-	padding: 10px;
-	margin-bottom: 10px;
-    box-shadow: 2.5px 4.33px 20px 0 rgba(64,87,191,0.2);
+	padding: 20px;
+	margin-bottom: 20px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
 }
 
-.textarea-h{
-    height: 150px;
+.submit-button button {
+	padding: 12px 50px;
+    transition: .5s;
+    font-weight: bold;
+    border: 2px solid  transparent;
 }
-.submit-button button{
-    border: none;
-    border: 2px solid transparent;
-    background: #17a2b8 ;
-}
-
 
 .submit-button button:hover{
     background: white;	
@@ -112,6 +294,50 @@
 }
 /* ====== Contact Area End ====  */
 
-footer p{
+/* ===== Apps Icon Area Start ===== */
+.icon-button{
+        margin-left: 130px;
+        padding: 30px 0;
+}
+.icon-button .bt-1 {
+	border: none;
+	background: white;
+	border: 3px solid #5ba533;
+	color: #5ba533;
+	font-weight: bold;
+	padding: 14px 44px;
+	margin: 16px;
+	border-radius: 10px;
+    transition: .5s;
+    
+}
+
+.icon-button .bt-1:hover{
+    background: #5ba533;
     color: white;
 }
+
+.icon-button .bt-2 {
+	border: none;
+    background: #5ba533;
+	color: white;
+	font-weight: bold;
+	padding: 17px 44px;
+	margin: 8px;
+	border-radius: 10px;
+    transition: .5s;
+    border: 3px solid transparent;
+    
+}
+
+.icon-button .bt-2:hover{
+    background: white;
+    color: #5ba533;
+    border: 3px solid #5ba533;
+}
+
+.icon-button .bt-1,.bt-2 i{
+    font-size: 20px;
+}
+
+/* ===== Apps Icon Area End ===== */
